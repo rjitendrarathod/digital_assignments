@@ -29,6 +29,7 @@ app_license = "MIT"
 
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
+fixtures = ['Custom Field', 'Property Setter', 'Print Format', 'Role']
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
@@ -94,6 +95,12 @@ app_license = "MIT"
 # Document Events
 # ---------------
 # Hook on document methods and events
+
+doc_events = {
+	"Item": {
+			"validate":"digital.digital.custom_script.item.item.validate"
+		}
+}
 
 # doc_events = {
 #	"*": {
